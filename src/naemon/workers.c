@@ -25,6 +25,11 @@
 #include "wpres-phash.h"
 #include <glib.h>
 
+#ifndef ETIME
+	#define ETIME ETIMEDOUT                         /* FreeBSD */
+#endif
+
+
 struct wproc_worker;
 
 struct wproc_job {
