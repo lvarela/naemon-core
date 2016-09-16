@@ -2,13 +2,31 @@
 ## This is a port of Naemon Core to FreeBSD##
 This port is a work in progress.
 
+ports needed to compile naemon-code (binutils?)
+```
+devel/autoconf
+devel/automake
+devel/libtool
+devel/shtool
+devel/autogen
+misc/help2man
+```
+
+
 Before compiling run this:
 ```
 pw groupadd naemon 
 pw adduser naemon -g naemon -d /nonexistent -s /usr/sbin/nologin -c "Naemon daemon user"
-
-./configure --with-pluginsdir=/usr/local/libexec/nagios --localstatedir=/usr/local/var/naemon
 ```
+
+compile
+```
+./configure --with-pluginsdir=/usr/local/libexec/nagios --localstatedir=/usr/local/var/naemon
+gmake
+gmake install
+gmake clean
+```
+
 
 before running:
 ```
