@@ -1,4 +1,4 @@
-## Welcome to Naemon Core ##
+## Welcome to Naemon Core FreeBSD Port##
 
 Naemon is a host/service/network monitoring program written in C and
 released under the GNU General Public License. It works by scheduling
