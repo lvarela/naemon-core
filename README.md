@@ -1,5 +1,5 @@
 
-## This is port of Naemon Core to FreeBSD##
+## This is a port of Naemon Core to FreeBSD##
 This port is a work in progress.
 
 Before compiling run this:
@@ -14,6 +14,8 @@ before running:
 ```
 mkdir /usr/local/etc/naemon/module-conf.d
 ```
+
+
 
 
 
