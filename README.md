@@ -21,7 +21,7 @@ pw adduser naemon -g naemon -d /nonexistent -s /usr/sbin/nologin -c "Naemon daem
 
 compile
 ```
-autoreconf -s -i
+./autogen.sh
 ./configure --with-pluginsdir=/usr/local/libexec/nagios --localstatedir=/usr/local/var/naemon
 gmake
 gmake install
